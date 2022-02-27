@@ -1,38 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58rem;
+  height: 32rem;
+  border: 1px gainsboro solid;
+  border-radius: 10px;
+  box-shadow: 2px 5px 5px 2px #ece8e8;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+.side-container {
+  width: 35%;
+  height: 100%;
+}
+.side-container img {
+  max-width: 100%;
+  height: 31.9rem;
+  object-fit: cover;
+}
+main {
+  display: flex;
+  width: 65%;
+  padding: 3rem;
+}
+/* navbad design */
+.navbar-container {
+  background-color: white;
+  display: flex;
+  border-bottom: 2px rgb(223, 220, 220) solid;
+}
+.box-btn {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding: 1rem 0rem;
+  margin-right: 1.5rem;
+}
+.box-btn button {
+  padding: 0.3rem 0.5rem;
+  margin-right: 0.5rem;
+  border: 0;
+  border-radius: 3px;
+  background-color: aliceblue;
+}
+.box-btn p {
+  font-size: 0.9rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Sign UP Detail */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  height: 85%;
+  padding: 1rem 0rem;
+}
+.detail-container {
+  display: flex;
+}
+.heading p {
+  font-size: 0.7rem;
+  padding-bottom: 0.2rem;
+}
+.heading h2 {
+  font-size: 1rem;
+  padding-bottom: 0.7rem;
+}
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 0.5rem;
+}
+.col-1 input {
+  font-size: 0.7rem;
+  width: 100%;
+  padding: 0.7rem 0.2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px rgb(182, 181, 181) solid;
+}
+.col-1 label {
+  font-size: 0.8rem;
+}
+
+/* Next Container design */
+
+.next-btn-container {
+  border-top: 2px rgb(223, 220, 220) solid;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 2rem 0rem;
 }
-
-.App-link {
-  color: #61dafb;
+.next-btn {
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  border: 0px;
+  margin-right: 0.5rem;
+  background-color: rgb(60, 139, 243);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
 }
